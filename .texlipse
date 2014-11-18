@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Tue Nov 18 14:40:08 MSK 2014
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=DivePython.tex
+outputFile=DivePython.pdf
+langSpell=ru
+markDer=true
+srcDir=
