@@ -1,0 +1,268 @@
+-------------------------------------------------------------------------------
+
+Table of Contents
+   
+  * 1. Installing Python
+      + 1.1. Which Python is right for you?
+      + 1.2. Python on Windows
+      + 1.3. Python on Mac OS X
+      + 1.4. Python on Mac OS 9
+      + 1.5. Python on RedHat Linux
+      + 1.6. Python on Debian GNU/Linux
+      + 1.7. Python Installation from Source
+      + 1.8. The Interactive Shell
+      + 1.9. Summary
+   
+  * 2. Your First Python Program
+      + 2.1. Diving in
+      + 2.2. Declaring Functions
+          o 2.2.1. How Python's Datatypes Compare to Other Programming
+            Languages
+       
+      + 2.3. Documenting Functions
+      + 2.4. Everything Is an Object
+          o 2.4.1. The Import Search Path
+          o 2.4.2. What's an Object?
+       
+      + 2.5. Indenting Code
+      + 2.6. Testing Modules
+   
+  * 3. Native Datatypes
+      + 3.1. Introducing Dictionaries
+          o 3.1.1. Defining Dictionaries
+          o 3.1.2. Modifying Dictionaries
+          o 3.1.3. Deleting Items From Dictionaries
+       
+      + 3.2. Introducing Lists
+          o 3.2.1. Defining Lists
+          o 3.2.2. Adding Elements to Lists
+          o 3.2.3. Searching Lists
+          o 3.2.4. Deleting List Elements
+          o 3.2.5. Using List Operators
+       
+      + 3.3. Introducing Tuples
+      + 3.4. Declaring variables
+          o 3.4.1. Referencing Variables
+          o 3.4.2. Assigning Multiple Values at Once
+       
+      + 3.5. Formatting Strings
+      + 3.6. Mapping Lists
+      + 3.7. Joining Lists and Splitting Strings
+          o 3.7.1. Historical Note on String Methods
+       
+      + 3.8. Summary
+   
+  * 4. The Power Of Introspection
+      + 4.1. Diving In
+      + 4.2. Using Optional and Named Arguments
+      + 4.3. Using type, str, dir, and Other Built-In Functions
+          o 4.3.1. The type Function
+          o 4.3.2. The str Function
+          o 4.3.3. Built-In Functions
+       
+      + 4.4. Getting Object References With getattr
+          o 4.4.1. getattr with Modules
+          o 4.4.2. getattr As a Dispatcher
+       
+      + 4.5. Filtering Lists
+      + 4.6. The Peculiar Nature of and and or
+          o 4.6.1. Using the and-or Trick
+       
+      + 4.7. Using lambda Functions
+          o 4.7.1. Real-World lambda Functions
+       
+      + 4.8. Putting It All Together
+      + 4.9. Summary
+   
+  * 5. Objects and Object-Orientation
+      + 5.1. Diving In
+      + 5.2. Importing Modules Using from module import
+      + 5.3. Defining Classes
+          o 5.3.1. Initializing and Coding Classes
+          o 5.3.2. Knowing When to Use self and __init__
+       
+      + 5.4. Instantiating Classes
+          o 5.4.1. Garbage Collection
+       
+      + 5.5. Exploring UserDict: A Wrapper Class
+      + 5.6. Special Class Methods
+          o 5.6.1. Getting and Setting Items
+       
+      + 5.7. Advanced Special Class Methods
+      + 5.8. Introducing Class Attributes
+      + 5.9. Private Functions
+      + 5.10. Summary
+   
+  * 6. Exceptions and File Handling
+      + 6.1. Handling Exceptions
+          o 6.1.1. Using Exceptions For Other Purposes
+       
+      + 6.2. Working with File Objects
+          o 6.2.1. Reading Files
+          o 6.2.2. Closing Files
+          o 6.2.3. Handling I/O Errors
+          o 6.2.4. Writing to Files
+       
+      + 6.3. Iterating with for Loops
+      + 6.4. Using sys.modules
+      + 6.5. Working with Directories
+      + 6.6. Putting It All Together
+      + 6.7. Summary
+   
+  * 7. Regular Expressions
+      + 7.1. Diving In
+      + 7.2. Case Study: Street Addresses
+      + 7.3. Case Study: Roman Numerals
+          o 7.3.1. Checking for Thousands
+          o 7.3.2. Checking for Hundreds
+       
+      + 7.4. Using the {n,m} Syntax
+          o 7.4.1. Checking for Tens and Ones
+       
+      + 7.5. Verbose Regular Expressions
+      + 7.6. Case study: Parsing Phone Numbers
+      + 7.7. Summary
+   
+  * 8. HTML Processing
+      + 8.1. Diving in
+      + 8.2. Introducing sgmllib.py
+      + 8.3. Extracting data from HTML documents
+      + 8.4. Introducing BaseHTMLProcessor.py
+      + 8.5. locals and globals
+      + 8.6. Dictionary-based string formatting
+      + 8.7. Quoting attribute values
+      + 8.8. Introducing dialect.py
+      + 8.9. Putting it all together
+      + 8.10. Summary
+   
+  * 9. XML Processing
+      + 9.1. Diving in
+      + 9.2. Packages
+      + 9.3. Parsing XML
+      + 9.4. Unicode
+      + 9.5. Searching for elements
+      + 9.6. Accessing element attributes
+      + 9.7. Segue
+   
+  * 10. Scripts and Streams
+      + 10.1. Abstracting input sources
+      + 10.2. Standard input, output, and error
+      + 10.3. Caching node lookups
+      + 10.4. Finding direct children of a node
+      + 10.5. Creating separate handlers by node type
+      + 10.6. Handling command-line arguments
+      + 10.7. Putting it all together
+      + 10.8. Summary
+   
+  * 11. HTTP Web Services
+      + 11.1. Diving in
+      + 11.2. How not to fetch data over HTTP
+      + 11.3. Features of HTTP
+          o 11.3.1. User-Agent
+          o 11.3.2. Redirects
+          o 11.3.3. Last-Modified/If-Modified-Since
+          o 11.3.4. ETag/If-None-Match
+          o 11.3.5. Compression
+       
+      + 11.4. Debugging HTTP web services
+      + 11.5. Setting the User-Agent
+      + 11.6. Handling Last-Modified and ETag
+      + 11.7. Handling redirects
+      + 11.8. Handling compressed data
+      + 11.9. Putting it all together
+      + 11.10. Summary
+   
+  * 12. SOAP Web Services
+      + 12.1. Diving In
+      + 12.2. Installing the SOAP Libraries
+          o 12.2.1. Installing PyXML
+          o 12.2.2. Installing fpconst
+          o 12.2.3. Installing SOAPpy
+       
+      + 12.3. First Steps with SOAP
+      + 12.4. Debugging SOAP Web Services
+      + 12.5. Introducing WSDL
+      + 12.6. Introspecting SOAP Web Services with WSDL
+      + 12.7. Searching Google
+      + 12.8. Troubleshooting SOAP Web Services
+      + 12.9. Summary
+   
+  * 13. Unit Testing
+      + 13.1. Introduction to Roman numerals
+      + 13.2. Diving in
+      + 13.3. Introducing romantest.py
+      + 13.4. Testing for success
+      + 13.5. Testing for failure
+      + 13.6. Testing for sanity
+   
+  * 14. Test-First Programming
+      + 14.1. roman.py, stage 1
+      + 14.2. roman.py, stage 2
+      + 14.3. roman.py, stage 3
+      + 14.4. roman.py, stage 4
+      + 14.5. roman.py, stage 5
+   
+  * 15. Refactoring
+      + 15.1. Handling bugs
+      + 15.2. Handling changing requirements
+      + 15.3. Refactoring
+      + 15.4. Postscript
+      + 15.5. Summary
+   
+  * 16. Functional Programming
+      + 16.1. Diving in
+      + 16.2. Finding the path
+      + 16.3. Filtering lists revisited
+      + 16.4. Mapping lists revisited
+      + 16.5. Data-centric programming
+      + 16.6. Dynamically importing modules
+      + 16.7. Putting it all together
+      + 16.8. Summary
+   
+  * 17. Dynamic functions
+      + 17.1. Diving in
+      + 17.2. plural.py, stage 1
+      + 17.3. plural.py, stage 2
+      + 17.4. plural.py, stage 3
+      + 17.5. plural.py, stage 4
+      + 17.6. plural.py, stage 5
+      + 17.7. plural.py, stage 6
+      + 17.8. Summary
+   
+  * 18. Performance Tuning
+      + 18.1. Diving in
+      + 18.2. Using the timeit Module
+      + 18.3. Optimizing Regular Expressions
+      + 18.4. Optimizing Dictionary Lookups
+      + 18.5. Optimizing List Operations
+      + 18.6. Optimizing String Manipulation
+      + 18.7. Summary
+   
+  * A. Further reading
+  * B. A 5-minute review
+  * C. Tips and tricks
+  * D. List of examples
+  * E. Revision history
+  * F. About the book
+  * G. GNU Free Documentation License
+      + G.0. Preamble
+      + G.1. Applicability and definitions
+      + G.2. Verbatim copying
+      + G.3. Copying in quantity
+      + G.4. Modifications
+      + G.5. Combining documents
+      + G.6. Collections of documents
+      + G.7. Aggregation with independent works
+      + G.8. Translation
+      + G.9. Termination
+      + G.10. Future revisions of this license
+      + G.11. How to use this License for your documents
+   
+  * H. Python license
+      + H.A. History of the software
+      + H.B. Terms and conditions for accessing or otherwise using Python
+          o H.B.1. PSF license agreement
+          o H.B.2. BeOpen Python open source license agreement version 1
+          o H.B.3. CNRI open source GPL-compatible license agreement
+          o H.B.4. CWI permissions statement and disclaimer
+       

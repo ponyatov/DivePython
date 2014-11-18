@@ -28,15 +28,282 @@ tabsize=4, % tab style
 % misc
 \newcommand{\email}[1]{$<$\href{mailto:#1}{#1}$>$}
 
-\author{Mark Pilgrim}
+\author{Mark Pilgrim \email{mark@diveintopython.org}}
 \title{Dive Into Python}
 \date{20 May 2004: Версия 5.4}
 
 \begin{document}
 
-% \input{title}
+\input{title}
 \tableofcontents
 % \input{preface}
 
+\chapter{1. Installing Python}
+\section{1.1. Which Python is right for you?}
+\section{1.2. Python on Windows}
+\section{1.3. Python on Mac OS X}
+\section{1.4. Python on Mac OS 9}
+\section{1.5. Python on RedHat Linux}
+\section{1.6. Python on Debian GNU/Linux}
+\section{1.7. Python Installation from Source}
+\section{1.8. The Interactive Shell}
+\section{1.9. Summary}
+   
+\chapter{2. Your First Python Program}
+\section{2.1. Diving in}
+\section{2.2. Declaring Functions}
+\subsection{2.2.1. How Python's Datatypes Compare to Other Programming
+Languages}
+       
+\section{2.3. Documenting Functions}
+\section{2.4. Everything Is an Object}
+\subsection{2.4.1. The Import Search Path}
+\subsection{2.4.2. What's an Object?}
+       
+\section{2.5. Indenting Code}
+\section{2.6. Testing Modules}
+   
+\chapter{3. Native Datatypes}
+\section{3.1. Introducing Dictionaries}
+\subsection{3.1.1. Defining Dictionaries}
+\subsection{3.1.2. Modifying Dictionaries}
+\subsection{3.1.3. Deleting Items From Dictionaries}
+       
+\section{3.2. Introducing Lists}
+\subsection{3.2.1. Defining Lists}
+\subsection{3.2.2. Adding Elements to Lists}
+\subsection{3.2.3. Searching Lists}
+\subsection{3.2.4. Deleting List Elements}
+\subsection{3.2.5. Using List Operators}
+       
+\section{3.3. Introducing Tuples}
+\section{3.4. Declaring variables}
+\subsection{3.4.1. Referencing Variables}
+\subsection{3.4.2. Assigning Multiple Values at Once}
+       
+\section{3.5. Formatting Strings}
+\section{3.6. Mapping Lists}
+\section{3.7. Joining Lists and Splitting Strings}
+\subsection{3.7.1. Historical Note on String Methods}
+       
+\section{3.8. Summary}
+   
+\chapter{4. The Power Of Introspection}
+\section{4.1. Diving In}
+\section{4.2. Using Optional and Named Arguments}
+\section{4.3. Using type, str, dir, and Other Built-In Functions}
+\subsection{4.3.1. The type Function}
+\subsection{4.3.2. The str Function}
+\subsection{4.3.3. Built-In Functions}
+       
+\section{4.4. Getting Object References With getattr}
+\subsection{4.4.1. getattr with Modules}
+\subsection{4.4.2. getattr As a Dispatcher}
+       
+\section{4.5. Filtering Lists}
+\section{4.6. The Peculiar Nature of and and or}
+\subsection{4.6.1. Using the and-or Trick}
+       
+\section{4.7. Using lambda Functions}
+\subsection{4.7.1. Real-World lambda Functions}
+       
+\section{4.8. Putting It All Together}
+\section{4.9. Summary}
+   
+\chapter{5. Objects and Object-Orientation}
+\section{5.1. Diving In}
+\section{5.2. Importing Modules Using from module import}
+\section{5.3. Defining Classes}
+\subsection{5.3.1. Initializing and Coding Classes}
+\subsection{5.3.2. Knowing When to Use self and \_\_init\_\_}
+       
+\section{5.4. Instantiating Classes}
+\subsection{5.4.1. Garbage Collection}
+       
+\section{5.5. Exploring UserDict: A Wrapper Class}
+\section{5.6. Special Class Methods}
+\subsection{5.6.1. Getting and Setting Items}
+       
+\section{5.7. Advanced Special Class Methods}
+\section{5.8. Introducing Class Attributes}
+\section{5.9. Private Functions}
+\section{5.10. Summary}
+   
+\chapter{6. Exceptions and File Handling}
+\section{6.1. Handling Exceptions}
+\subsection{6.1.1. Using Exceptions For Other Purposes}
+       
+\section{6.2. Working with File Objects}
+\subsection{6.2.1. Reading Files}
+\subsection{6.2.2. Closing Files}
+\subsection{6.2.3. Handling I/O Errors}
+\subsection{6.2.4. Writing to Files}
+       
+\section{6.3. Iterating with for Loops}
+\section{6.4. Using sys.modules}
+\section{6.5. Working with Directories}
+\section{6.6. Putting It All Together}
+\section{6.7. Summary}
+   
+\chapter{7. Regular Expressions}
+\section{7.1. Diving In}
+\section{7.2. Case Study: Street Addresses}
+\section{7.3. Case Study: Roman Numerals}
+\subsection{7.3.1. Checking for Thousands}
+\subsection{7.3.2. Checking for Hundreds}
+       
+\section{7.4. Using the {n,m} Syntax}
+\subsection{7.4.1. Checking for Tens and Ones}
+       
+\section{7.5. Verbose Regular Expressions}
+\section{7.6. Case study: Parsing Phone Numbers}
+\section{7.7. Summary}
+   
+\chapter{8. HTML Processing}
+\section{8.1. Diving in}
+\section{8.2. Introducing sgmllib.py}
+\section{8.3. Extracting data from HTML documents}
+\section{8.4. Introducing BaseHTMLProcessor.py}
+\section{8.5. locals and globals}
+\section{8.6. Dictionary-based string formatting}
+\section{8.7. Quoting attribute values}
+\section{8.8. Introducing dialect.py}
+\section{8.9. Putting it all together}
+\section{8.10. Summary}
+   
+\chapter{9. XML Processing}
+\section{9.1. Diving in}
+\section{9.2. Packages}
+\section{9.3. Parsing XML}
+\section{9.4. Unicode}
+\section{9.5. Searching for elements}
+\section{9.6. Accessing element attributes}
+\section{9.7. Segue}
+   
+\chapter{10. Scripts and Streams}
+\section{10.1. Abstracting input sources}
+\section{10.2. Standard input, output, and error}
+\section{10.3. Caching node lookups}
+\section{10.4. Finding direct children of a node}
+\section{10.5. Creating separate handlers by node type}
+\section{10.6. Handling command-line arguments}
+\section{10.7. Putting it all together}
+\section{10.8. Summary}
+   
+\chapter{11. HTTP Web Services}
+\section{11.1. Diving in}
+\section{11.2. How not to fetch data over HTTP}
+\section{11.3. Features of HTTP}
+\subsection{11.3.1. User-Agent}
+\subsection{11.3.2. Redirects}
+\subsection{11.3.3. Last-Modified/If-Modified-Since}
+\subsection{11.3.4. ETag/If-None-Match}
+\subsection{11.3.5. Compression}
+       
+\section{11.4. Debugging HTTP web services}
+\section{11.5. Setting the User-Agent}
+\section{11.6. Handling Last-Modified and ETag}
+\section{11.7. Handling redirects}
+\section{11.8. Handling compressed data}
+\section{11.9. Putting it all together}
+\section{11.10. Summary}
+   
+\chapter{12. SOAP Web Services}
+\section{12.1. Diving In}
+\section{12.2. Installing the SOAP Libraries}
+\subsection{12.2.1. Installing PyXML}
+\subsection{12.2.2. Installing fpconst}
+\subsection{12.2.3. Installing SOAPpy}
+       
+\section{12.3. First Steps with SOAP}
+\section{12.4. Debugging SOAP Web Services}
+\section{12.5. Introducing WSDL}
+\section{12.6. Introspecting SOAP Web Services with WSDL}
+\section{12.7. Searching Google}
+\section{12.8. Troubleshooting SOAP Web Services}
+\section{12.9. Summary}
+   
+\chapter{13. Unit Testing}
+\section{13.1. Introduction to Roman numerals}
+\section{13.2. Diving in}
+\section{13.3. Introducing romantest.py}
+\section{13.4. Testing for success}
+\section{13.5. Testing for failure}
+\section{13.6. Testing for sanity}
+   
+\chapter{14. Test-First Programming}
+\section{14.1. roman.py, stage 1}
+\section{14.2. roman.py, stage 2}
+\section{14.3. roman.py, stage 3}
+\section{14.4. roman.py, stage 4}
+\section{14.5. roman.py, stage 5}
+   
+\chapter{15. Refactoring}
+\section{15.1. Handling bugs}
+\section{15.2. Handling changing requirements}
+\section{15.3. Refactoring}
+\section{15.4. Postscript}
+\section{15.5. Summary}
+   
+\chapter{16. Functional Programming}
+\section{16.1. Diving in}
+\section{16.2. Finding the path}
+\section{16.3. Filtering lists revisited}
+\section{16.4. Mapping lists revisited}
+\section{16.5. Data-centric programming}
+\section{16.6. Dynamically importing modules}
+\section{16.7. Putting it all together}
+\section{16.8. Summary}
+   
+\chapter{17. Dynamic functions}
+\section{17.1. Diving in}
+\section{17.2. plural.py, stage 1}
+\section{17.3. plural.py, stage 2}
+\section{17.4. plural.py, stage 3}
+\section{17.5. plural.py, stage 4}
+\section{17.6. plural.py, stage 5}
+\section{17.7. plural.py, stage 6}
+\section{17.8. Summary}
+   
+\chapter{18. Performance Tuning}
+\section{18.1. Diving in}
+\section{18.2. Using the timeit Module}
+\section{18.3. Optimizing Regular Expressions}
+\section{18.4. Optimizing Dictionary Lookups}
+\section{18.5. Optimizing List Operations}
+\section{18.6. Optimizing String Manipulation}
+\section{18.7. Summary}
+      
+\appendix
+   
+\chapter{A. Further reading}
+\chapter{B. A 5-minute review}
+\chapter{C. Tips and tricks}
+\chapter{D. List of examples}
+\chapter{E. Revision history}
+\chapter{F. About the book}
+\chapter{G. GNU Free Documentation License}
+\setcounter{section}{-1}
+\section{G.0. Preamble}
+\section{G.1. Applicability and definitions}
+\section{G.2. Verbatim copying}
+\section{G.3. Copying in quantity}
+\section{G.4. Modifications}
+\section{G.5. Combining documents}
+\section{G.6. Collections of documents}
+\section{G.7. Aggregation with independent works}
+\section{G.8. Translation}
+\section{G.9. Termination}
+\section{G.10. Future revisions of this license}
+\section{G.11. How to use this License for your documents}
+   
+\chapter{H. Python license}
+
+\section{H.A. History of the software}
+\section{H.B. Terms and conditions for accessing or otherwise using Python}
+\subsection{H.B.1. PSF license agreement}
+\subsection{H.B.2. BeOpen Python open source license agreement version 1}
+\subsection{H.B.3. CNRI open source GPL-compatible license agreement}
+\subsection{H.B.4. CWI permissions statement and disclaimer}
 
 \end{document}
